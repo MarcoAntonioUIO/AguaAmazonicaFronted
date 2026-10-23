@@ -1,0 +1,9 @@
+export default {
+  semi: true,
+  singleQuote: false,
+  trailingComma: "all",
+  tabWidth: 2,
+  useTabs: false,
+  printWidth: 100,
+  plugins: ["prettier-plugin-astro"],
+};

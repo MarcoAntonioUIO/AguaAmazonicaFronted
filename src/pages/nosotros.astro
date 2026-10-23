@@ -1,0 +1,857 @@
+
+---
+import MainLayout from '../layouts/MainLayout.astro';
+
+const milestones = [
+  {
+    title: "Fundación",
+    year: "2024",
+    description:
+      "Agua Amazónica nace en la ciudad de El Coca, provincia de Orellana, con el compromiso de ofrecer agua purificada de calidad a un precio accesible para todos.",
+  },
+  {
+    title: "Salud y Bienestar",
+    year: "Nuestro propósito",
+    description:
+      "El proyecto surge ante la necesidad de contar con una alternativa segura de agua para la comunidad, promoviendo el cuidado de la salud y el bienestar de las familias.",
+  },
+  {
+    title: "Buenas Prácticas",
+    year: "En desarrollo",
+    description:
+      "Actualmente fortalecemos nuestros procesos y trabajamos en la certificación de Buenas Prácticas de Manufactura (BPM), buscando mantener altos estándares de calidad.",
+  },
+  {
+    title: "Visión 2030",
+    year: "Nuestro futuro",
+    description:
+      "Buscamos consolidarnos como referentes en purificación y distribución de agua, promoviendo la sostenibilidad, la salud y el desarrollo local.",
+  },
+];
+
+const valores = [
+  {
+    title: "Bienestar",
+    description:
+      "Trabajamos para ofrecer agua purificada que contribuya al bienestar y calidad de vida de nuestros clientes.",
+    icon: "💧",
+  },
+  {
+    title: "Equidad",
+    description:
+      "Creemos que el acceso a agua segura y de calidad debe estar al alcance de todas las personas.",
+    icon: "🤝",
+  },
+  {
+    title: "Sostenibilidad",
+    description:
+      "Promovemos prácticas responsables con los recursos naturales y el cuidado permanente del medio ambiente.",
+    icon: "🌱",
+  },
+  {
+    title: "Transparencia",
+    description:
+      "Actuamos con responsabilidad, honestidad y claridad en nuestros procesos y relaciones con nuestros clientes.",
+    icon: "🔎",
+  },
+  {
+    title: "Prosperidad",
+    description:
+      "Impulsamos el desarrollo local y buscamos generar oportunidades para nuestra comunidad.",
+    icon: "📈",
+  },
+  {
+    title: "Excelencia",
+    description:
+      "Buscamos mejorar continuamente nuestros procesos para ofrecer productos y servicios de calidad.",
+    icon: "⭐",
+  },
+];
+---
+
+<MainLayout title="Nuestra Historia | Agua Amazónica">
+  <!-- Título de página -->
+  <section class="page-header py-5">
+    <div class="container text-center">
+      <span class="section-label">
+        AGUA AMAZÓNICA
+      </span>
+
+      <h1 class="page-title">
+        Nuestra Historia
+      </h1>
+
+      <p class="page-subtitle">
+        Agua, salud y compromiso con nuestra comunidad.
+      </p>
+    </div>
+  </section>
+
+  <!-- Historia / Hitos -->
+  <section class="milestones-section py-5">
+    <div class="container">
+      <div class="row g-5">
+        {
+          milestones.map((item) => (
+            <div class="col-md-6 col-lg-3">
+              <div class="milestone-card h-100">
+                <h3 class="milestone-title">
+                  {item.title}
+                </h3>
+
+                <span class="milestone-year">
+                  {item.year}
+                </span>
+
+                <p class="milestone-desc">
+                  {item.description}
+                </p>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Visión y Misión -->
+  <section class="vision-mision py-5">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-6">
+          <div class="vm-card">
+            <span class="section-label">
+              NUESTRO PROPÓSITO
+            </span>
+
+            <h2 class="vm-title">
+              Misión
+            </h2>
+
+            <p class="vm-text">
+              Ofrecer agua purificada de calidad, mediante procesos responsables
+              y cuidadosamente controlados, contribuyendo al bienestar de las
+              familias y brindando un servicio confiable y accesible para nuestra
+              comunidad.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="vm-card">
+            <span class="section-label">
+              NUESTRO FUTURO
+            </span>
+
+            <h2 class="vm-title">
+              Visión 2030
+            </h2>
+
+            <p class="vm-text">
+              Consolidarnos como referentes en purificación y distribución de
+              agua en la región, promoviendo la sostenibilidad, el cuidado de la
+              salud, la protección del medio ambiente y el desarrollo local.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Origen / Planta -->
+  <section class="origen-section py-5">
+    <div class="container">
+      <div class="row align-items-center g-5 origen-row">
+        <!-- Imagen -->
+        <div class="col-lg-6">
+          <div class="origen-image-wrapper">
+            <img
+              src="/images/banners/planta_purificadora.png"
+              alt="Planta purificadora Agua Amazónica"
+              class="img-fluid rounded-4 shadow origen-image"
+            />
+          </div>
+        </div>
+
+        <!-- Texto -->
+        <div class="col-lg-6">
+          <div class="origen-content">
+            <span class="section-label">
+              EL COCA · ORELLANA
+            </span>
+
+            <h2 class="origen-title">
+              Agua Amazónica
+              <span>El Coca - Ecuador</span>
+            </h2>
+
+            <p class="origen-text">
+              Fundada en <strong>2024</strong> en la ciudad de
+              <strong>El Coca, provincia de Orellana</strong>, Agua Amazónica
+              nace con un compromiso claro: ofrecer agua purificada de alta
+              calidad a un precio accesible para todos.
+            </p>
+
+            <p class="origen-text">
+              El proyecto surgió al identificar la necesidad de contar con
+              alternativas seguras de agua para la comunidad. Su fundador,
+              <strong>médico con experiencia en el ámbito renal</strong> y
+              graduado de la <strong>Universidad Central del Ecuador</strong>,
+              decidió crear una alternativa confiable orientada al bienestar
+              de las familias.
+            </p>
+
+            <p class="origen-text mb-0">
+              Actualmente nos encontramos en proceso de certificación en
+              <strong>Buenas Prácticas de Manufactura (BPM)</strong> y
+              fortalecemos nuestro servicio a domicilio para brindar mayor
+              comodidad y confianza a nuestros clientes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Salud -->
+  <section class="salud-section py-5">
+    <div class="container">
+      <div class="row align-items-center g-5 salud-row">
+        <!-- Texto -->
+        <div class="col-lg-6">
+          <div class="salud-content">
+            <span class="section-label">
+              SALUD Y BIENESTAR
+            </span>
+
+            <h2 class="salud-title">
+              Cuidar el agua es
+              <span>cuidar nuestra salud</span>
+            </h2>
+
+            <p class="salud-text">
+              El agua es un elemento esencial para la vida. Por eso trabajamos
+              para brindar a nuestros clientes una alternativa de agua
+              purificada que contribuya a una vida saludable y al bienestar
+              diario de las familias.
+            </p>
+
+            <p class="salud-text">
+              Nuestro compromiso está orientado hacia la calidad, la prevención
+              y la confianza, fortaleciendo continuamente nuestros procesos para
+              ofrecer un producto elaborado bajo condiciones responsables.
+            </p>
+
+            <div class="health-highlight">
+              <strong>
+                Salud · Calidad · Confianza
+              </strong>
+
+              <span>
+                Nuestro compromiso comienza con el cuidado de las personas.
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Imagen -->
+        <div class="col-lg-6">
+          <div class="salud-image-wrapper">
+            <img
+              src="/images/badges/medalla.png"
+              alt="Compromiso con la calidad de Agua Amazónica"
+              class="img-fluid salud-image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Naturaleza y medio ambiente -->
+  <section class="naturaleza-section py-5">
+    <div class="container">
+      <div class="section-heading text-center">
+        <span class="section-label">
+          NATURALEZA Y MEDIO AMBIENTE
+        </span>
+
+        <h2>
+          Nuestro compromiso con
+          <span>la naturaleza</span>
+        </h2>
+
+        <p>
+          El Coca se encuentra en una de las regiones naturales más importantes
+          del Ecuador. Esta riqueza nos inspira a desarrollar nuestras
+          actividades con responsabilidad y respeto por el entorno.
+        </p>
+      </div>
+
+      <div class="row g-5 nature-cards">
+        <div class="col-md-4">
+          <div class="nature-card">
+            <div class="nature-icon">
+              💧
+            </div>
+
+            <h3>
+              Cuidado del agua
+            </h3>
+
+            <p>
+              Promovemos el uso responsable del agua y la importancia de
+              proteger este recurso esencial para las generaciones presentes
+              y futuras.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="nature-card">
+            <div class="nature-icon">
+              🌳
+            </div>
+
+            <h3>
+              Protección ambiental
+            </h3>
+
+            <p>
+              Buscamos desarrollar nuestras actividades de manera responsable,
+              reduciendo nuestro impacto y fomentando una cultura de respeto
+              hacia la naturaleza.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="nature-card">
+            <div class="nature-icon">
+              ♻️
+            </div>
+
+            <h3>
+              Consumo responsable
+            </h3>
+
+            <p>
+              Incentivamos prácticas responsables relacionadas con el manejo de
+              residuos, el reciclaje y el aprovechamiento adecuado de los
+              recursos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Valores -->
+  <section class="valores-section py-5">
+    <div class="container">
+      <div class="section-heading text-center">
+        <span class="section-label">
+          NUESTROS VALORES
+        </span>
+
+        <h2>
+          Principios que nos
+          <span>representan</span>
+        </h2>
+
+        <p>
+          Cada una de nuestras acciones está guiada por principios que
+          reflejan nuestro compromiso con las personas, la salud, la comunidad
+          y el medio ambiente.
+        </p>
+      </div>
+
+      <div class="row g-4 valores-grid">
+        {
+          valores.map((valor) => (
+            <div class="col-md-6 col-lg-4">
+              <div class="valor-card">
+                <div class="valor-icon">
+                  {valor.icon}
+                </div>
+
+                <h3>
+                  {valor.title}
+                </h3>
+
+                <p>
+                  {valor.description}
+                </p>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Compromiso final -->
+  <section class="frase-final py-5">
+    <div class="container text-center">
+      <span class="section-label section-label-light">
+        AGUA AMAZÓNICA
+      </span>
+
+      <p class="frase-text">
+        Pureza para las personas,
+        <em>respeto por la naturaleza.</em>
+      </p>
+
+      <p class="frase-description">
+        Trabajamos por un futuro donde la calidad del agua,
+        la salud y la protección del medio ambiente sean parte
+        de una misma visión.
+      </p>
+    </div>
+  </section>
+</MainLayout>
+
+<style>
+  /* =========================================
+     VARIABLES Y ESTILOS GENERALES
+  ========================================= */
+
+  :global(:root) {
+    --splendor-blue: #0056b3;
+  }
+
+  /* =========================================
+     PAGE HEADER
+  ========================================= */
+
+  .page-header {
+    background: #fff;
+    padding-top: 4rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+  .section-label {
+    display: inline-block;
+    color: var(--splendor-blue);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+  }
+
+  .section-label-light {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .page-title {
+    font-size: clamp(2.4rem, 5vw, 3.4rem);
+    font-weight: 800;
+    color: var(--splendor-blue);
+    letter-spacing: -0.5px;
+    margin-bottom: 0.5rem;
+  }
+
+  .page-subtitle {
+    color: #64748b;
+    font-size: 1.1rem;
+    margin: 0.8rem 0 0;
+  }
+
+  /* =========================================
+     MILESTONES
+  ========================================= */
+
+  .milestones-section {
+    background: #fff;
+  }
+
+  .milestone-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .milestone-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 0.4rem;
+  }
+
+  .milestone-year {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--splendor-blue);
+    margin-bottom: 1rem;
+  }
+
+  .milestone-desc {
+    font-size: 0.95rem;
+    color: #475569;
+    line-height: 1.65;
+    border-left: 3px solid var(--splendor-blue);
+    padding-left: 1rem;
+    margin: 0;
+  }
+
+  /* =========================================
+     VISIÓN Y MISIÓN
+  ========================================= */
+
+  .vision-mision {
+    background: #f8fafc;
+  }
+
+  .vm-card {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 4px 24px rgba(0, 86, 179, 0.08);
+    height: 100%;
+  }
+
+  .vm-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--splendor-blue);
+    margin-bottom: 1.25rem;
+  }
+
+  .vm-text {
+    font-size: 1.05rem;
+    color: #334155;
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  /* =========================================
+     ORIGEN
+  ========================================= */
+
+  .origen-section {
+    background: #fff;
+  }
+
+  .origen-row {
+    --bs-gutter-x: 5rem;
+    --bs-gutter-y: 5rem;
+  }
+
+  .origen-image-wrapper {
+    padding: 1rem;
+  }
+
+  .origen-image {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .origen-content {
+    padding: 1rem 1.5rem;
+  }
+
+  .origen-title {
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    font-weight: 800;
+    color: #1e293b;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+  }
+
+  .origen-title span {
+    display: block;
+    color: var(--splendor-blue);
+  }
+
+  .origen-text {
+    font-size: 1.05rem;
+    color: #475569;
+    line-height: 1.75;
+    margin-bottom: 1.1rem;
+  }
+
+  /* =========================================
+     SALUD
+  ========================================= */
+
+  .salud-section {
+    background: #f8fafc;
+  }
+
+  .salud-row {
+    --bs-gutter-x: 6rem;
+    --bs-gutter-y: 5rem;
+  }
+
+  .salud-content {
+    padding: 1rem 1.5rem;
+  }
+
+  .salud-title {
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    font-weight: 800;
+    color: #1e293b;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+  }
+
+  .salud-title span {
+    color: var(--splendor-blue);
+  }
+
+  .salud-text {
+    font-size: 1.05rem;
+    color: #475569;
+    line-height: 1.75;
+    margin-bottom: 1.1rem;
+  }
+
+  .salud-image-wrapper {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .salud-image {
+    width: 100%;
+    max-width: 420px;
+    height: 420px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+  }
+
+  .health-highlight {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-left: 4px solid var(--splendor-blue);
+    background: #fff;
+    border-radius: 0 1rem 1rem 0;
+  }
+
+  .health-highlight strong {
+    color: var(--splendor-blue);
+    font-size: 1.1rem;
+  }
+
+  .health-highlight span {
+    color: #64748b;
+  }
+
+  /* =========================================
+     NATURALEZA
+  ========================================= */
+
+  .naturaleza-section {
+    background: #fff;
+  }
+
+  .section-heading {
+    max-width: 850px;
+    margin: 0 auto 4rem;
+  }
+
+  .section-heading h2 {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 800;
+    color: #1e293b;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+  }
+
+  .section-heading h2 span {
+    color: var(--splendor-blue);
+  }
+
+  .section-heading p {
+    color: #64748b;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin: 0;
+  }
+
+  .nature-cards {
+    --bs-gutter-x: 3rem;
+    --bs-gutter-y: 3rem;
+  }
+
+  .nature-card {
+    height: 100%;
+    padding: 2.5rem 2rem;
+    background: #f8fafc;
+    border-radius: 1.5rem;
+    text-align: center;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+
+  .nature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  }
+
+  .nature-icon {
+    font-size: 3rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .nature-card h3 {
+    color: #1e293b;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .nature-card p {
+    color: #64748b;
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  /* =========================================
+     VALORES
+  ========================================= */
+
+  .valores-section {
+    background: #f8fafc;
+  }
+
+  .valores-grid {
+    --bs-gutter-x: 2rem;
+    --bs-gutter-y: 2rem;
+  }
+
+  .valor-card {
+    height: 100%;
+    padding: 2.2rem;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 1.25rem;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease,
+      border-color 0.3s ease;
+  }
+
+  .valor-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--splendor-blue);
+    box-shadow: 0 12px 30px rgba(0, 86, 179, 0.1);
+  }
+
+  .valor-icon {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .valor-card h3 {
+    color: #1e293b;
+    font-size: 1.3rem;
+    font-weight: 750;
+    margin-bottom: 0.8rem;
+  }
+
+  .valor-card p {
+    color: #64748b;
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  /* =========================================
+     FRASE FINAL
+  ========================================= */
+
+  .frase-final {
+    background: linear-gradient(
+      135deg,
+      #004a9f 0%,
+      #0070d4 100%
+    );
+    color: #fff;
+  }
+
+  .frase-text {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 600;
+    margin: 0 0 1rem;
+    letter-spacing: 0.3px;
+  }
+
+  .frase-text em {
+    display: block;
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  .frase-description {
+    max-width: 700px;
+    margin: auto;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.7;
+  }
+
+  /* =========================================
+     RESPONSIVE
+  ========================================= */
+
+  @media (max-width: 991px) {
+    .origen-row,
+    .salud-row {
+      --bs-gutter-x: 2rem;
+      --bs-gutter-y: 3rem;
+    }
+
+    .origen-content,
+    .salud-content {
+      padding: 1rem 0;
+    }
+
+    .origen-image-wrapper {
+      padding: 0;
+    }
+
+    .salud-image-wrapper {
+      padding: 1rem;
+    }
+
+    .origen-image {
+      height: 400px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .page-header {
+      padding-top: 3rem !important;
+    }
+
+    .milestone-card {
+      padding: 1rem 0;
+    }
+
+    .origen-image {
+      height: 300px;
+    }
+
+    .salud-image {
+      height: 300px;
+    }
+
+    .vm-card {
+      padding: 2rem;
+    }
+
+    .nature-cards {
+      --bs-gutter-x: 1.5rem;
+      --bs-gutter-y: 2rem;
+    }
+
+    .section-heading {
+      margin-bottom: 2.5rem;
+    }
+  }
+</style>
