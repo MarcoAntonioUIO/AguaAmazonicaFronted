@@ -1,0 +1,13 @@
+
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import ReactIntegrationTest from '../components/store/ReactIntegrationTest';
+---
+
+<MainLayout>
+  <main>
+    <h1>Prueba de integración Astro + React</h1>
+
+    <ReactIntegrationTest client:load />
+  </main>
+</MainLayout>
